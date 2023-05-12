@@ -28,6 +28,11 @@ h1 {
     bottom: 90px;
     border: none;
     box-shadow: 0px 3px 9px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.plus-Btn:active, .minus-Btn:active{
+    transform:translateY(5px);
 }
 
 .minus-Btn {
