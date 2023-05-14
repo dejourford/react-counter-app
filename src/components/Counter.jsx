@@ -5,21 +5,16 @@ import "./counter.css"
 
 
 export default function Counter() {
+   
     const [count, setCount] = React.useState(0)
-
+    
     const add = () => {
-        console.log('add')
-        setCount(count + 1)
-        
+        setCount(prevCount => prevCount + 1)
     }
 
     const subtract = () => {
-        console.log('minus')
-        setCount(count - 1)
+        setCount(prevCount => prevCount - 1)
     }
-    
-    
-
     return (
         <div className="counter">
             
